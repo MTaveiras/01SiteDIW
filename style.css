@@ -1,6 +1,17 @@
 /* Menu Main inicio */
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
+
+  .carousel {
+    max-width: 600px;
+    margin: 50px auto;
+  }
+
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
 
   .menu-item {
     background-color: lightblue;
@@ -11,7 +22,7 @@
     border-radius: 10px;
     font-family: Arial;
   }
-  
+
   .menu-item a {
     text-decoration: none;
     color: #000000;
@@ -20,7 +31,7 @@
   .menu-item a:hover {
     color: #0000FF;
   }
-  
+
   h1 {
     display: inline-block;
     background-color: cadetblue;
@@ -31,45 +42,62 @@
     font-family: Arial;
   }
 
-/* Titulo das Imagens */
+  div.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-/* Menu Header Site - Inicio */
+  img {
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+  }
 
-body header img {
-  float: left;
-  margin-top: 0px;
-}
+  /* Titulo das Imagens */
 
-body {
-  background-color: white;
-  background-image: url(https://www.queroviajarmais.com/wp-content/webp-express/webp-images/uploads/2020/07/mapa-da-europa.jpg.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  scale: 100%
-}
+  /* Menu Header Site - Inicio */
 
-body header div {
-  display: inline-block;
-}
+  body header img {
+    float: left;
+    margin-top: 0px;
+  }
 
-header {
-  display: flex;
-  align-items: center;
-}
+  body {
+    background-color: white;
+    background-image: url(https://www.queroviajarmais.com/wp-content/webp-express/webp-images/uploads/2020/07/mapa-da-europa.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    scale: 100%
+  }
 
-#menuToggle {
-  display: none;
-}
+  body header div {
+    display: inline-block;
+  }
 
-.menu-icon {
-  display: none;
-}
+  header {
+    display: flex;
+    align-items: center;
+  }
 
-/* Menu Header Site - Fim */
+  #menuToggle {
+    display: none;
+  }
 
-/* CSS Grid */
+  .menu-icon {
+    display: none;
+  }
 
+  /* Menu Header Site - Fim */
+
+  /* CSS Grid */
+
+  /*
 .grid-paises {
+  
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 20px;
@@ -77,61 +105,81 @@ header {
   margin: 0 auto;
   padding: 10px;
   align-items: center;
+  
 }
+*/
 
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  grid-gap: 10px;
-}
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 10px;
+  }
 
-.banner {
-  display: grid;
-  grid-column: 3;
-  grid-row: 2 / 5;
-  grid-gap: 10px;
-}
+  .banner {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2 / 5;
+    grid-gap: 10px;
+  }
 
-/* Mobile CSS - Inicio */
+  /* Mobile CSS - Inicio */
 
-h3 a{
-  color: black
-}
+  h3 a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
-h3 a:hover{
-  color: blue;
-}
+  h3 a:hover {
+    color: blue;
+  }
 
-/* Mobile CSS - Fim */
+  /* Mobile CSS - Fim */
 
-/* Body - Texto das Imagens */
+  /* Body - Texto das Imagens */
 
-.logo {
-  display: inline-block;
-  padding: 15px 20px;
-  margin-left: 20px;
-}
+  .logo {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-left: 20px;
+  }
 
-body header div {
-  display: inline-block;
-}
+  body {
+    background-color: white;
+    background-image: url(https://www.queroviajarmais.com/wp-content/webp-express/webp-images/uploads/2020/07/mapa-da-europa.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    scale: 100%
+  }
 
-header {
-  display: flex;
-}
+  body header div {
+    display: inline-block;
+  }
 
+  header {
+    display: flex;
+  }
+
+  /*
 body main div.box-album {
   display: inline-block;
   width: calc(100% - 16px);
 }
+*/
 
-body>main {
-  width: 100%;
+  main {
+    width: 100%;
+    /*
   max-width: calc(100% - 200px);
   margin-left: 200px;
-}
+  */
+  }
 
+  /*
 body > main > div.box-album > div {
   display: flex;
   background-color: cadetblue;
@@ -141,6 +189,7 @@ body > main > div.box-album > div {
   margin-bottom: 10px;
   font-family: Arial;
   }
+  
 
 body > main > div.box-album > img {
   width: 20%;
@@ -148,107 +197,123 @@ body > main > div.box-album > img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+*/
 
-/* Body - Menu Main Fim */
+  /* Body - Menu Main Fim */
 
 
-/* Barra Lateral Inicio */
+  /* Barra Lateral Inicio */
 
-.lateral {
-  background-color: cadetblue;
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  left: 1px;
-  overflow: auto;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
+  .lateral {
+    visibility: hidden;
+    background-color: cadetblue;
+    height: 100%;
+    width: 20px;
+    position: fixed;
+    z-index: 1;
+    left: 1px;
+    overflow: auto;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
 
-aside > div.lateral > li {
-  color: black;
-  font-family: Arial;
-}
+  aside>div.lateral>li {
+    color: black;
+    font-family: Arial;
+  }
 
-li.lat a:hover {
-  color: blue;
-  background-color: lightcyan;
-}
+  li.lat a:hover {
+    color: blue;
+    background-color: lightcyan;
+  }
 
-li.lat a{
-  display: block;
-  padding: 20px 5px;
-  color: black;
-  font-family: Arial;
-  display: block;
-  padding: 8px;
-  text-decoration: none;
-}
+  li.lat a {
+    display: block;
+    padding: 20px 5px;
+    color: black;
+    font-family: Arial;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
 
-/* Barra Lateral Fim */
 
+  /* Barra Lateral Fim */
+
+  /* Footer Start */
+
+  body {
+    padding-bottom: 250px;
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: lightseagreen;
+    color: black;
+    text-align: center;
+  }
+
+  .informacoes {
+    display: flex;
+  }
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Footer End */
 }
 
 /* Mobile CSS Start */
 
 @media screen and (max-width:600px) {
 
-  /* Checkbox Funcional Inicio */
 
-  #menuToggle {
-    display: none;
+  .carousel {
+    max-width: 600px;
+    margin: auto;
   }
 
-  ul {
-    padding-inline-start: 0px;
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
   }
 
-  .menu-icon{
-    display: block;
-    color: white;
-    width: 50px;
-    height: inherit;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    line-height: 60px;
-    z-index: 999;
-  }
-
-  .menu-icon i {
-    font-size: 1.7em;
-  }
-
-  #menuToggle:checked ~ label i:nth-child(2){
-    display: block;
-  }
-
-  #menuToggle:checked ~ label i:first-child{
-    display: none;
-  }
-
-  #menuToggle:not(checked) ~ label i:first-child{
-    display: block;
-  }
-
-  #menuToggle:not(checked) ~ label i:nth-child(2){
-    display: none;
-  }
-
-  #menuToggle:checked ~ ul{
-    height: 100%;
-  }
 
   /* Checkbox Funcional Fim */
-  
+
   .menu-principal {
     justify-content: flex-start;
   }
 
+  div.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  img {
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+  }
+
+
+
   .grid-paises {
+    margin: auto
+      /*
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -256,19 +321,21 @@ li.lat a{
     margin: 0 auto;
     padding: 10px;
     align-items: center;
+    */
   }
-  
+
+
   .card {
     display: grid;
     align-items: center;
     grid-gap: 10px;
   }
-  
+
   .card {
     grid-template-columns: 1fr;
   }
 
-  .card:nth-child(9){
+  .card:nth-child(9) {
     display: none;
   }
 
@@ -276,45 +343,79 @@ li.lat a{
     display: none;
   }
 
-  h3 a{
-    color: black
+  h5 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
   }
-  
-  h3 a:hover{
+
+
+  h3 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 a:hover {
     color: blue;
   }
 
-  header {
-    background-color: darkgrey;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 75px;
-    position: fixed;
-  }
 
-  header div nav {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
 
   main {
     margin-top: 75px;
-    background-color:azure;
+    background-color: azure;
   }
 
-/* Menu Mobile Header */
+  /* Menu Mobile Header */
 
 
 
-aside {
-  display: none;
-}
+  aside {
+    display: none;
+  }
 
-.lateral {
-  visibility: hidden; /*para não mostrar barra lateral */
-}
+  .lateral {
+
+    background-color: cadetblue;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    left: 1px;
+    overflow: auto;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  aside>div.lateral>li {
+    visibility: hidden;
+    color: black;
+    font-family: Arial;
+  }
+
+  li.lat a:hover {
+    color: blue;
+    background-color: lightcyan;
+  }
+
+  li.lat a {
+    display: block;
+    padding: 20px 5px;
+    color: black;
+    font-family: Arial;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
 
 
   .menu {
@@ -335,14 +436,14 @@ aside {
     transition: height 0.2s;
   }
 
-  .menu li{
+  .menu li {
     display: block;
     width: 100%;
     margin-left: 0px;
     margin-bottom: 20px;
   }
 
-  .menu li a{
+  .menu li a {
     display: block;
     text-align: center;
     width: 100%;
@@ -352,10 +453,141 @@ aside {
     text-decoration: none;
   }
 
-  .menu li a:hover{
+  .menu li a:hover {
     color: black;
   }
-  
+
+  h3 a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  h3 a:hover {
+    color: blue;
+  }
+
+  main {
+    margin-top: 75px;
+    background-color: azure;
+  }
+
+  /* Menu Mobile Header */
+
+  aside {
+    display: none;
+  }
+
+  .lateral {
+    background-color: cadetblue;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    left: 1px;
+    overflow: auto;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  aside>div.lateral>li {
+    visibility: hidden;
+    color: black;
+    font-family: Arial;
+  }
+
+  li.lat a:hover {
+    color: blue;
+    background-color: lightcyan;
+  }
+
+  li.lat a {
+    display: block;
+    padding: 20px 5px;
+    color: black;
+    font-family: Arial;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .menu {
+    margin-top: 0px;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    transition: height 0.2s;
+  }
+
+  .menu li {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .menu li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-family: Arial;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    color: black;
+  }
+
+  /* Footer Mobile Start */
+
+  footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: lightseagreen;
+    color: black;
+    text-align: center;
+  }
+
+  .informacoes {
+    display: flex;
+  }
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    padding-bottom: 250px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    scale: 100%
+  }
 }
+
+
+/* Footer End */
 
 /* Mobile CSS End */
