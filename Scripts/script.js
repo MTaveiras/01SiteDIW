@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://MTaveiras.JSON-DIW.repl.co/paises")
+    fetch("https://json-diw.mtaveiras.repl.co/paises")
       .then((response) => response.json())
       .then((data) => {
         const gridPaisesContainer = document.querySelector(".grid-paises-container");
