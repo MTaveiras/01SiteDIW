@@ -1,21 +1,27 @@
-        const centralLatLong= [-43.9397233,-19.9332786]
+        const centralLatLong= [12.4964, 41.9028]
         mapboxgl.accessToken = 'pk.eyJ1IjoibWN0czExIiwiYSI6ImNscGxyYXh1djAyanYybm1sbmtzbGZrZDQifQ.gzJAtSvHTO5KQQxdPnxOIg';
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v12',
             center: centralLatLong,
-            zoom: 9
+            zoom: 4
         });
 
-        unidadesPUC.forEach ((uni) => {
-            let popup = new mapboxgl.Popup({ offset: 25 })
-                .setHTML(`<h3><a href="${uni.url}" target="_blank">${uni.descricao}</a></h3><br>
-                          ${uni.endereco} <br> ${uni.cidade}`);
-            const marker = new mapboxgl.Marker({ color: uni.cor })
-                .setLngLat(uni.latlong)
-                .setPopup(popup)
-                .addTo(map);     
-        }) 
+        fetch('https://json-diw.mtaveiras.repl.co/paises')
+        .then(response => response.json())
+        .then(paises => {
+            paises.forEach((pais) => {
+                let popup = new mapboxgl.Popup({ offset: 25 })
+                    .setHTML(`<h3>${pais.nome}</h3><img src="${pais.imagem}" alt="${pais.nome}" style="max-width: 100px;"><br>${pais.descricao}<br><a href="${pais.link}" target="_blank">Ver mais</a>`);
+                const marker = new mapboxgl.Marker({ color: 'blue' })
+                    .setLngLat(pais.coordenadas)
+                    .setPopup(popup)
+                    .addTo(map);
+            });
+        })
+        .catch(error => {
+            console.error('Erro ao carregar o arquivo JSON:', error);
+        });
 
         function processarGeo (local) {
           let popup = new mapboxgl.Popup({ offset: 25 })
