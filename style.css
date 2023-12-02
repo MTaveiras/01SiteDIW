@@ -246,30 +246,67 @@ body > main > div.box-album > img {
 
   body {
     padding-bottom: 250px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    scale: 100%
   }
 
-  footer {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background-color: lightseagreen;
-    color: black;
-    text-align: center;
-  }
+/* Estilizando o footer */
 
-  .informacoes {
-    display: flex;
-  }
+body {
+  padding-bottom: 250px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  scale: 100%
+}
 
-  .sobre {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+footer {
+  background-color: #f8f9fa; 
+  padding: 20px; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+
+.footer {
+  border: 2px solid #343a40; 
+  border-radius: 10px; 
+}
+
+
+.footer h4 {
+  margin-bottom: 20px; 
+}
+
+
+.informacoes {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+
+.informacoes p {
+  margin: 5px 0; 
+}
+
+
+.informacoes a {
+  text-decoration: none; 
+  color: #007bff; 
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+
+.informacoes a:hover {
+  color: #0056b3;
+}
+}
 
   /* Footer End */
-}
 
 /* Mobile CSS Start */
 
@@ -558,33 +595,58 @@ body > main > div.box-album > img {
 
   /* Footer Mobile Start */
 
-  footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background-color: lightseagreen;
-    color: black;
-    text-align: center;
-  }
+/* Estilizando o footer */
 
-  .informacoes {
-    display: flex;
-  }
+body {
+  padding-bottom: 250px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  scale: 100%
+}
 
-  .sobre {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+footer {
+  background-color: #f8f9fa; 
+  padding: 20px; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}
 
-  body {
-    padding-bottom: 250px;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    scale: 100%
-  }
+
+.footer {
+  border: 2px solid #343a40; 
+  border-radius: 10px; 
+}
+
+
+.footer h4 {
+  margin-bottom: 20px; 
+}
+
+
+.informacoes {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+
+.informacoes p {
+  margin: 5px 0; 
+}
+
+
+.informacoes a {
+  text-decoration: none; 
+  color: #007bff; 
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+
+.informacoes a:hover {
+  color: #0056b3;
+}
 }
 
 
