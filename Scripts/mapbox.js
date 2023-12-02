@@ -7,7 +7,7 @@
             zoom: 4
         });
 
-        fetch('https://json-diw.mtaveiras.repl.co/paises')
+        fetch("https://json-diw.mtaveiras.repl.co/paises")
         .then(response => response.json())
         .then(paises => {
             paises.forEach((pais) => {
