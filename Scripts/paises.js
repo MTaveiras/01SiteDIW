@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Obter parâmetros de consulta da URL
+   
     const params = new URLSearchParams(window.location.search);
     const paisSelecionado = params.get('pais');
   
-    // Se o nome do país estiver presente nos parâmetros de consulta
+    
     if (paisSelecionado) {
-      // Obter dados do JSON (substitua pelo seu caminho ou URL real)
+     
       fetch("https://json-diw.mtaveiras.repl.co/paises")
         .then((response) => response.json())
         .then((data) => {
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
           const pais = data.paises.find((p) => p.nome === paisSelecionado);
   
           if (pais) {
-            // Atualizar as informações na página
+           
             document.getElementById("nomePais").innerText = pais.nome;
             document.getElementById("imagemPais").src = pais.imagem;
             document.getElementById("linkPais").href = pais.link;
             document.getElementById("descricaoPais").innerText = pais.descricao;
   
-            // Atualizar os pontos turísticos
+           
             const pontosContainer = document.getElementById("pontosTuristicos");
             pontosContainer.innerHTML = '';
   
